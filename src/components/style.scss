@@ -1,0 +1,17 @@
+.todo {
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: pink;
+    > ul {
+        li {
+            background-color: rebeccapurple;
+        }
+    }
+    h1 {
+        color: aqua;
+    }
+}
+
+.wrapper {
+    display: flex;
+}

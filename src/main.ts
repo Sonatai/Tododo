@@ -1,5 +1,8 @@
-import { createApp } from 'vue';
-import App from './App';
-import './style.scss';
+import './normalize.scss';
 
-createApp(App).mount('#app');
+import ElementPlus from 'element-plus';
+import { createApp } from 'vue';
+
+import App from './App';
+
+createApp(App).use(ElementPlus).mount('#app');

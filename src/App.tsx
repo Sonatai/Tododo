@@ -4,6 +4,7 @@ import './style.scss';
 import { defineComponent } from 'vue';
 
 import ListCard from './components/ListCard/ListCard';
+import mockData from './mockData.json';
 
 export default defineComponent({
     name: 'App',
@@ -15,15 +16,9 @@ export default defineComponent({
                     <el-container>
                         {/* <el-aside width="200px">Aside</el-aside> */}
                         <el-main class="main__content">
-                            <ListCard key="1" list="Blah" />
-                            <ListCard key="2" list="Blah" />
-                            <ListCard key="3" list="Blah" />
-                            <ListCard key="4" list="Blah" />
-                            <ListCard key="5" list="Blah" />
-                            <ListCard key="6" list="Blah" />
-                            <ListCard key="7" list="Blah" />
-                            <ListCard key="8" list="Blah" />
-                            <ListCard key="9" list="Blah" />
+                            {mockData.map((data) => (
+                                <ListCard key={data.name} {...data} />
+                            ))}
                         </el-main>
                     </el-container>
                 </el-container>

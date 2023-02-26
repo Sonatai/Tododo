@@ -8,7 +8,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/tododo/',
+    base: '/todo-vue-jsx/',
     plugins: [
         vue(),
         vueJsx(),
